@@ -1,0 +1,13 @@
+{
+  "rows": 502,
+  "branches": [
+    "Estadual",
+    "Federal",
+    "Trabalho"
+  ],
+  "tribunals": 57,
+  "year_min": 2015,
+  "year_max": 2023,
+  "target_column": "tpbaixc1m",
+  "digitalization_column": "procel1"
+}
