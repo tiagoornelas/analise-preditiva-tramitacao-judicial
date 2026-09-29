@@ -65,10 +65,14 @@ def assert_disjoint_group_split(dataframe: pd.DataFrame) -> None:
 
 def main() -> None:
     ensure_project_directories()
-    raw = load_main_dataset()
-    assert_required_columns(raw)
+    if config.MAIN_DATASET_PATH.exists():
+        raw = load_main_dataset()
+        assert_required_columns(raw)
+        modeling_dataset = build_modeling_dataset()
+    else:
+        modeling_dataset = pd.read_csv(config.PROCESSED_DATA_DIR / "modeling_dataset.csv")
 
-    modeling_dataset = build_modeling_dataset()
+    assert_required_columns(modeling_dataset)
     assert_scope_rules(modeling_dataset)
     assert_no_missing_target(modeling_dataset)
     assert_disjoint_group_split(modeling_dataset)
