@@ -11,10 +11,10 @@
 
 ## Metrics
 
-| model             |      r2 |     mae |    rmse |
-|:------------------|--------:|--------:|--------:|
-| random_forest     | 0.39527 | 216.421 | 334.287 |
-| linear_regression | 0.28244 | 251.815 | 364.14  |
+| model             |       r2 |     mae |    rmse |
+|:------------------|---------:|--------:|--------:|
+| random_forest     | 0.400591 | 215.885 | 332.813 |
+| linear_regression | 0.28244  | 251.815 | 364.14  |
 
 ## Top linear coefficients
 
@@ -36,15 +36,15 @@
 | feature                       |   importance |
 |:------------------------------|-------------:|
 | categorical__justica_Trabalho |  0.315106    |
-| numeric__h1                   |  0.187215    |
-| numeric__g1                   |  0.183569    |
-| numeric__iad1                 |  0.134385    |
-| numeric__procel1              |  0.039792    |
-| numeric__ano                  |  0.0381557   |
-| numeric__sajudmag1            |  0.0345612   |
-| numeric__cn1                  |  0.0340712   |
-| numeric__cm1                  |  0.0327095   |
-| categorical__justica_Federal  |  0.000436477 |
+| numeric__h1                   |  0.187315    |
+| numeric__g1                   |  0.183504    |
+| numeric__iad1                 |  0.131754    |
+| numeric__procel1              |  0.0397977   |
+| numeric__ano                  |  0.0380122   |
+| numeric__cn1                  |  0.036735    |
+| numeric__sajudmag1            |  0.0344618   |
+| numeric__cm1                  |  0.0329306   |
+| categorical__justica_Federal  |  0.000384738 |
 
 ## Best random forest parameters
 
